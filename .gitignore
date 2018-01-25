@@ -1,22 +1,385 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+//13-----------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    int m=5;
+    for(int i=n-1;i>=0;i--){
+     for(int j=0;j<i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=n-1;k>=i;k--){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    
+    for(int i=0;i<m;i++){
+     for(int j=0;j<=i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=0;k<m-i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
+* * * * * * 
+  * * * * * 
+    * * * * 
+      * * * 
+        * * 
+          * 
+*/
+//12------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=5;
+    int m=4;
+    for(int i=0;i<n;i++){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    for(int i=m-1;i>=0;i--){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+*/
+//11-------------------------------------------------------------------------------------
+/*class Main {
+  public static void main(String[] args) {
+    int n=6;
+    //int m=6;
+    for(int i=0;i<n;i++){
+      for(int k=0;k<i;k++){
+       System.out.print(" ");
+     } 
+     for(int j=0;j<n-i;j++){
+       System.out.print("* ");
+     } 
+     
+    System.out.println();
+    }
+    
+    for(int i=0;i<n;i++){
+     for(int j=1;j<n-i;j++){
+       System.out.print(" ");
+     } 
+     for(int k=0;k<=i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    
+}
+}
+o/p:
+* * * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+*/
+//10-------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    //int m=6;
+    for(int i=0;i<n;i++){
+     for(int j=1;j<n-i;j++){
+       System.out.print(" ");
+     } 
+     for(int k=0;k<=i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    for(int i=0;i<n;i++){
+      for(int k=0;k<i;k++){
+       System.out.print(" ");
+     } 
+     for(int j=0;j<n-i;j++){
+       System.out.print("* ");
+     } 
+     
+    System.out.println();
+    }
+}
+}
+o/p:
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+* * * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+*/
+//9---------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=0;i<n;i++){
+      for(int k=0;k<i;k++){
+       System.out.print(" ");
+     } 
+     for(int j=0;j<n-i;j++){
+       System.out.print("* ");
+     } 
+     
+    System.out.println();
+    }
+}
+}
+o/p:
+* * * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+*/
+//8-------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=0;i<n;i++){
+     for(int j=1;j<n-i;j++){
+       System.out.print(" ");
+     } 
+     for(int k=0;k<=i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+}
+}
+/*
+o/p:
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+*/
+//7----------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=0;i<n;i++){
+     for(int j=0;j<i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=0;k<n-i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    
+    for(int i=n-2;i>=0;i--){
+     for(int j=0;j<i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=5;k>=i;k--){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* * * * * * 
+  * * * * * 
+    * * * * 
+      * * * 
+        * * 
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
+* * * * * * 
+*/
+//6------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=0;i<n;i++){
+     for(int j=0;j<i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=0;k<n-i;k++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* * * * * * 
+  * * * * * 
+    * * * * 
+      * * * 
+        * * 
+          *
+*/
+//5------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=n-1;i>=0;i--){
+     for(int j=0;j<i;j++){
+       System.out.print("  ");
+     } 
+     for(int k=5;k>=i;k--){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
+* * * * * * 
+*/
+//4------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=n-1;i>=0;i--){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    for(int i=1;i<n;i++){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * *
+*/
+//3-------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=6;
+    for(int i=n-1;i>=0;i--){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+    
+  }
+}
+o/p:
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+*/
+//2--------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=5;
+    for(int i=0;i<n;i++){
+     for(int j=0;j<=i;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+*/
+//1--------------------------------------------------------------------------------------------
+/*
+class Main {
+  public static void main(String[] args) {
+    int n=5;
+    for(int i=0;i<n;i++){
+     for(int j=0;j<n;j++){
+       System.out.print("* ");
+     } 
+    System.out.println();
+    }
+  }
+}
+o/p:
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+*/
